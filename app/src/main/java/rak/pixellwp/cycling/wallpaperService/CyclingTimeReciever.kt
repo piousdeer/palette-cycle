@@ -5,6 +5,8 @@ import android.content.Context
 import android.content.Intent
 import android.util.Log
 import rak.pixellwp.cycling.LAST_HOUR_CHECKED
+import rak.pixellwp.cycling.LAST_RANDOMIZE_TIME
+import rak.pixellwp.cycling.TIMELINE_IMAGE
 import rak.pixellwp.cycling.models.TimelineImage
 import java.util.*
 
