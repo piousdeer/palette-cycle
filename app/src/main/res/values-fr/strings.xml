@@ -38,6 +38,9 @@
     <string name="preloadTitle">Pré-télécharger les images</string>
     <string name="preloadButton">Télécharger</string>
 
+    <string name="randomizeIntervalSummary">Changer automatiquement d\'image évolutive à intervalles définis</string>
+    <string name="randomizeIntervalTitle">Intervalle de randomisation</string>
+
     <string name="creditTitle">Crédits</string>
     <string name="credits">
         Crédits : \n
