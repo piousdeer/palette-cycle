@@ -100,6 +100,10 @@ class ImageLoader(private val context: Context) {
         return context.getFileStreamPath(image.getFileName()).exists()
     }
 
+    fun getAvailableTimelineImages(): List<String> {
+        return timelineImages.map { it.name }
+    }
+
     fun downloadImage(image: ImageInfo) {
         if (downloading.contains(image)) {
             Log.d(logTag, "Still attempting to download ${image.name}")

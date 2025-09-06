@@ -48,6 +48,8 @@ class CyclingWallpaperService : WallpaperService() {
         internal var overrideTimeline = prefs.getBoolean(OVERRIDE_TIMELINE, false)
         internal var overrideTime = prefs.getLong(OVERRIDE_TIME, 5000L)
         internal var dayPercent = prefs.getInt(OVERRIDE_TIME_PERCENT, 50)
+        internal var randomizeInterval = prefs.getString(RANDOMIZE_INTERVAL, "never") ?: "never"
+        internal var lastRandomizeTime = prefs.getLong(LAST_RANDOMIZE_TIME, System.currentTimeMillis())
         internal var scaleFactor = prefs.getFloat(SCALE_FACTOR, 5.3f)
         internal var minScaleFactor = 0.1f
 

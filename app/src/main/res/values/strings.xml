@@ -40,6 +40,9 @@
     <string name="preloadTitle">Preload Images</string>
     <string name="preloadButton">preload</string>
 
+    <string name="randomizeIntervalSummary">Automatically change Timeline Image at specified intervals</string>
+    <string name="randomizeIntervalTitle">Randomize Interval</string>
+
     <string name="creditTitle">Credits</string>
     <string name="credits">
         Credits: \n

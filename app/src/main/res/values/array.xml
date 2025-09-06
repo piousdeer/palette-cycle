@@ -14,4 +14,16 @@
         <item>Cloudy</item>
         <item>Rain</item>
     </string-array>
+    <string-array name="RandomizeInterval">
+        <item>Never</item>
+        <item>10 seconds</item>
+        <item>1 hour</item>
+        <item>1 day</item>
+    </string-array>
+    <string-array name="RandomizeIntervalValues">
+        <item>never</item>
+        <item>10s</item>
+        <item>1h</item>
+        <item>1d</item>
+    </string-array>
 </resources>
