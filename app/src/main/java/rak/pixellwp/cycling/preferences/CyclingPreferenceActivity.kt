@@ -47,15 +47,18 @@ class CyclingPreferenceActivity : FragmentActivity() {
             val timelineList = findPreference<DropDownPreference>(TIMELINE_IMAGE)
             val collectionList = findPreference<DropDownPreference>(IMAGE_COLLECTION)
             val panOverride = findPreference<SwitchPreference>(ADJUST_MODE)
+            val randomizeInterval = findPreference<DropDownPreference>(RANDOMIZE_INTERVAL)
 
             timelineList?.isVisible = false
             collectionList?.isVisible = false
             panOverride?.isVisible = false
+            randomizeInterval?.isVisible = false
 
             when (imageType) {
                 ImageType.TIMELINE -> {
                     timelineList?.isVisible = true
                     panOverride?.isVisible = true
+                    randomizeInterval?.isVisible = true
                 }
                 ImageType.COLLECTION -> {
                     collectionList?.isVisible = true

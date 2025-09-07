@@ -11,4 +11,10 @@
         <item>Nuageux</item>
         <item>Pluvieux</item>
     </string-array>
+    <string-array name="RandomizeInterval">
+        <item>Jamais</item>
+        <item>10 secondes</item>
+        <item>1 heure</item>
+        <item>1 jour</item>
+    </string-array>
 </resources>

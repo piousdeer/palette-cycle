@@ -31,6 +31,7 @@ fun CyclingWallpaperService.CyclingWallpaperEngine.preferenceListener(): SharedP
 
             currentImageType = preference.getString(IMAGE_TYPE, "")?.toImageType() ?: ImageType.TIMELINE
             weather = preference.getString(WEATHER_TYPE, "")?.toWeatherType() ?: WeatherType.ANY
+            randomizeInterval = preference.getString(RANDOMIZE_INTERVAL, "never") ?: "never"
 
             imageSrc = Rect(
                 preference.getInt(LEFT, imageSrc.left),
@@ -65,6 +66,8 @@ internal fun CyclingWallpaperService.CyclingWallpaperEngine.reloadPrefs() {
     val newOverrideTime = prefs.getLong(OVERRIDE_TIME, 5000L)
     currentImageType = prefs.getString(IMAGE_TYPE, "")?.toImageType() ?: ImageType.TIMELINE
     weather = prefs.getString(WEATHER_TYPE, "")?.toWeatherType() ?: WeatherType.ANY
+    randomizeInterval = prefs.getString(RANDOMIZE_INTERVAL, "never") ?: "never"
+    lastRandomizeTime = prefs.getLong(LAST_RANDOMIZE_TIME, System.currentTimeMillis())
 
     parallax = prefs.getBoolean(PARALLAX, parallax)
     adjustMode = prefs.getBoolean(ADJUST_MODE, false)

@@ -11,6 +11,13 @@
         android:key="timelineImage"
         android:summary="@string/timelineImageSummary"
         android:title="@string/timelineImageTitle" />
+    <DropDownPreference
+        android:defaultValue="never"
+        android:entries="@array/RandomizeInterval"
+        android:entryValues="@array/RandomizeIntervalValues"
+        android:key="randomizeInterval"
+        android:summary="@string/randomizeIntervalSummary"
+        android:title="@string/randomizeIntervalTitle" />
     <rak.pixellwp.cycling.preferences.ImageCollectionPreference
         android:key="imageCollection"
         android:summary="@string/imageCollectionSummary"
