@@ -1,0 +1,268 @@
+[
+  {
+    "name": "Seascape",
+    "images": [
+      {
+        "id": "V29FOG",
+        "name": "Seascape - Fog",
+        "startHour": "6",
+        "weather": "CLOUDY"
+      },
+      {
+        "id": "V29",
+        "name": "Seascape - Day",
+        "startHour": "10"
+      },
+      {
+        "id": "V29PM",
+        "name": "Seascape - Sunset",
+        "startHour": "18"
+      }
+    ]
+  },
+  {
+    "name": "Jungle Waterfall",
+    "images": [
+      {
+        "id": "V08AM",
+        "name": "Waterfall - Morning",
+        "startHour": "6"
+      },
+      {
+        "id": "V08",
+        "name": "Waterfall - Day",
+        "startHour": "11"
+      },
+      {
+        "id": "V08RAIN",
+        "name": "Waterfall - Rain",
+        "startHour": "16",
+        "weather": "RAIN"
+      },
+      {
+        "id": "V08PM",
+        "name": "Waterfall - Night",
+        "startHour": "18"
+      }
+    ]
+  },
+  {
+    "name": "Mirror Pond",
+    "images": [
+      {
+        "id": "V16",
+        "name": "Mirror Pond - Day",
+        "startHour": "6"
+      },
+      {
+        "id": "V16RAIN",
+        "name": "Mirror Pond - Rain",
+        "startHour": "15",
+        "weather": "RAIN"
+      },
+      {
+        "id": "V16PM",
+        "name": "Mirror Pond - Night",
+        "startHour": "18"
+      }
+    ]
+  },
+  {
+    "name": "Mountain Stream",
+    "images": [
+      {
+        "id": "V19",
+        "name": "Mountain Stream - Day",
+        "startHour": "6"
+      },
+      {
+        "id": "V19PM",
+        "name": "Mountain Stream - Night",
+        "startHour": "12"
+      },
+      {
+        "id": "V19AURA",
+        "name": "Mountain Stream - Aurora",
+        "startHour": "21",
+        "weather": "CLOUDY"
+      }
+    ]
+  },
+  {
+    "name": "Snowy Wood",
+    "images": [
+      {
+        "id": "V26",
+        "name": "Snowy Wood - Day",
+        "startHour": "6"
+      },
+      {
+        "id": "V26SNOW",
+        "name": "Snowy Wood - Snow",
+        "startHour": "12",
+        "weather": "RAIN"
+      },
+      {
+        "id": "V26PM",
+        "name": "Snowy Wood - Night",
+        "startHour": "17"
+      },
+      {
+        "id": "V26NIGHT",
+        "startHour": "21"
+      }
+    ]
+  },
+  {
+    "name": "Desert Heat",
+    "images": [
+      {
+        "id": "V25",
+        "name": "Desert Heat - Day",
+        "startHour": "6"
+      },
+      {
+        "id": "V25HEAT",
+        "name": "Desert Heat - Heat",
+        "startHour": "11",
+        "weather": "CLOUDY"
+      },
+      {
+        "id": "V25PM",
+        "name": "Desert Heat - Night",
+        "startHour": "17"
+      }
+    ]
+  },
+  {
+    "name": "Ghost Castle",
+    "images": [
+      {
+        "id": "V05AM",
+        "name": "Ghost Castle - Morning",
+        "startHour": "7"
+      },
+      {
+        "id": "V05RAIN",
+        "name": "Ghost Castle - Rain",
+        "startHour": "12",
+        "weather": "RAIN"
+      },
+      {
+        "id": "V05PM",
+        "name": "Ghost Castle - Evening",
+        "startHour": "16"
+      },
+      {
+        "id": "V05HAUNT",
+        "name": "Ghost Castle - Night",
+        "startHour": "20"
+      }
+    ]
+  },
+  {
+    "name": "Deep Forest",
+    "images": [
+      {
+        "id": "V30",
+        "name": "Deep Forest - Day"
+      },
+      {
+        "id": "V30RAIN",
+        "name": "Deep Forest - Rain",
+        "startHour": "14",
+        "weather": "RAIN"
+      }
+    ]
+  },
+  {
+    "id": "V04",
+    "name": "Highland Ruins - Rain",
+    "startHour": "14"
+  },
+  {
+    "id": "CORAL",
+    "name": "Aquarius - Day"
+  },
+  {
+    "id": "V01",
+    "name": "Island Fires - Dusk"
+  },
+  {
+    "id": "V02",
+    "name": "Mountain Fortress - Dusk"
+  },
+  {
+    "id": "V03",
+    "name": "Swamp Cathedral - Day"
+  },
+
+  {
+    "id": "V07",
+    "name": "Rough Seas - Day"
+  },
+  {
+    "id": "V09",
+    "name": "Forest Edge - Day"
+  },
+  {
+    "id": "V10",
+    "name": "Deep Swamp - Day"
+  },
+  {
+    "id": "V11AM",
+    "name": "Approaching Storm - Day"
+  },
+  {
+    "id": "V12",
+    "name": "Stone Henge"
+  },
+  {
+    "id": "V13",
+    "name": "Pond Ripples - Dawn"
+  },
+  {
+    "id": "V14",
+    "name": "Mountain Storm - Day"
+  },
+  {
+    "id": "V15",
+    "name": "Harbor Town - Night"
+  },
+  {
+    "id": "V17",
+    "name": "Ice Wind - Day"
+  },
+  {
+    "id": "V18",
+    "name": "Alpine Ruin"
+  },
+  {
+    "id": "V20",
+    "name": "Crystal Caves - Day"
+  },
+  {
+    "id": "V21",
+    "name": "Elvin City"
+  },
+  {
+    "id": "V22",
+    "name": "Dark Castle"
+  },
+  {
+    "id": "V23",
+    "name": "Desert Twilight"
+  },
+  {
+    "id": "V24",
+    "name": "Red Canyon"
+  },
+  {
+    "id": "V27",
+    "name": "Magic Marsh Cave - Night"
+  },
+  {
+    "id": "V28",
+    "name": "Water City Gates - Fog"
+  }
+]

@@ -1,0 +1,54 @@
+client:
+  name: basic
+  file-system: device-agnostic
+tools: {}
+targets:
+  "PackageStructure": ["<PackageStructure>"]
+  "PaletteCycle-x86_64-unknown-linux-gnu-debug.module": ["<PaletteCycle-x86_64-unknown-linux-gnu-debug.module>"]
+  "main": ["<PaletteCycle-x86_64-unknown-linux-gnu-debug.module>"]
+  "test": ["<PaletteCycle-x86_64-unknown-linux-gnu-debug.module>"]
+default: "main"
+nodes:
+  "/home/runner/work/palette-cycle/palette-cycle/ios/PaletteCycle/":
+    is-directory-structure: true
+    content-exclusion-patterns: [".git",".build"]
+commands:
+  "/home/runner/work/palette-cycle/palette-cycle/ios/.build/x86_64-unknown-linux-gnu/debug/PaletteCycle.build/PaletteCycle.swiftmodule.o":
+    tool: shell
+    inputs: ["/home/runner/work/palette-cycle/palette-cycle/ios/.build/x86_64-unknown-linux-gnu/debug/Modules/PaletteCycle.swiftmodule"]
+    outputs: ["/home/runner/work/palette-cycle/palette-cycle/ios/.build/x86_64-unknown-linux-gnu/debug/PaletteCycle.build/PaletteCycle.swiftmodule.o"]
+    description: "Wrapping AST for PaletteCycle for debugging"
+    args: ["/usr/share/swift/usr/bin/swiftc","-modulewrap","/home/runner/work/palette-cycle/palette-cycle/ios/.build/x86_64-unknown-linux-gnu/debug/Modules/PaletteCycle.swiftmodule","-o","/home/runner/work/palette-cycle/palette-cycle/ios/.build/x86_64-unknown-linux-gnu/debug/PaletteCycle.build/PaletteCycle.swiftmodule.o","-target","x86_64-unknown-linux-gnu"]
+
+  "/home/runner/work/palette-cycle/palette-cycle/ios/.build/x86_64-unknown-linux-gnu/debug/PaletteCycle.build/sources":
+    tool: write-auxiliary-file
+    inputs: ["<sources-file-list>","/home/runner/work/palette-cycle/palette-cycle/ios/PaletteCycle/Cycle.swift","/home/runner/work/palette-cycle/palette-cycle/ios/PaletteCycle/ImageLoader.swift","/home/runner/work/palette-cycle/palette-cycle/ios/PaletteCycle/ImageModels.swift","/home/runner/work/palette-cycle/palette-cycle/ios/PaletteCycle/Palette.swift","/home/runner/work/palette-cycle/palette-cycle/ios/PaletteCycle/PaletteCycleEngine.swift"]
+    outputs: ["/home/runner/work/palette-cycle/palette-cycle/ios/.build/x86_64-unknown-linux-gnu/debug/PaletteCycle.build/sources"]
+    description: "Write auxiliary file /home/runner/work/palette-cycle/palette-cycle/ios/.build/x86_64-unknown-linux-gnu/debug/PaletteCycle.build/sources"
+
+  "/home/runner/work/palette-cycle/palette-cycle/ios/.build/x86_64-unknown-linux-gnu/debug/swift-version--1BFCD5C06E9F820A.txt":
+    tool: write-auxiliary-file
+    inputs: ["<swift-get-version>","/usr/share/swift/usr/bin/swiftc"]
+    outputs: ["/home/runner/work/palette-cycle/palette-cycle/ios/.build/x86_64-unknown-linux-gnu/debug/swift-version--1BFCD5C06E9F820A.txt"]
+    always-out-of-date: "true"
+    description: "Write auxiliary file /home/runner/work/palette-cycle/palette-cycle/ios/.build/x86_64-unknown-linux-gnu/debug/swift-version--1BFCD5C06E9F820A.txt"
+
+  "<PaletteCycle-x86_64-unknown-linux-gnu-debug.module>":
+    tool: phony
+    inputs: ["/home/runner/work/palette-cycle/palette-cycle/ios/.build/x86_64-unknown-linux-gnu/debug/PaletteCycle.build/Cycle.swift.o","/home/runner/work/palette-cycle/palette-cycle/ios/.build/x86_64-unknown-linux-gnu/debug/PaletteCycle.build/ImageLoader.swift.o","/home/runner/work/palette-cycle/palette-cycle/ios/.build/x86_64-unknown-linux-gnu/debug/PaletteCycle.build/ImageModels.swift.o","/home/runner/work/palette-cycle/palette-cycle/ios/.build/x86_64-unknown-linux-gnu/debug/PaletteCycle.build/Palette.swift.o","/home/runner/work/palette-cycle/palette-cycle/ios/.build/x86_64-unknown-linux-gnu/debug/PaletteCycle.build/PaletteCycleEngine.swift.o","/home/runner/work/palette-cycle/palette-cycle/ios/.build/x86_64-unknown-linux-gnu/debug/Modules/PaletteCycle.swiftmodule"]
+    outputs: ["<PaletteCycle-x86_64-unknown-linux-gnu-debug.module>"]
+
+  "C.PaletteCycle-x86_64-unknown-linux-gnu-debug.module":
+    tool: shell
+    inputs: ["/home/runner/work/palette-cycle/palette-cycle/ios/PaletteCycle/Cycle.swift","/home/runner/work/palette-cycle/palette-cycle/ios/PaletteCycle/ImageLoader.swift","/home/runner/work/palette-cycle/palette-cycle/ios/PaletteCycle/ImageModels.swift","/home/runner/work/palette-cycle/palette-cycle/ios/PaletteCycle/Palette.swift","/home/runner/work/palette-cycle/palette-cycle/ios/PaletteCycle/PaletteCycleEngine.swift","/home/runner/work/palette-cycle/palette-cycle/ios/.build/x86_64-unknown-linux-gnu/debug/swift-version--1BFCD5C06E9F820A.txt","/home/runner/work/palette-cycle/palette-cycle/ios/.build/x86_64-unknown-linux-gnu/debug/PaletteCycle.build/sources"]
+    outputs: ["/home/runner/work/palette-cycle/palette-cycle/ios/.build/x86_64-unknown-linux-gnu/debug/PaletteCycle.build/Cycle.swift.o","/home/runner/work/palette-cycle/palette-cycle/ios/.build/x86_64-unknown-linux-gnu/debug/PaletteCycle.build/ImageLoader.swift.o","/home/runner/work/palette-cycle/palette-cycle/ios/.build/x86_64-unknown-linux-gnu/debug/PaletteCycle.build/ImageModels.swift.o","/home/runner/work/palette-cycle/palette-cycle/ios/.build/x86_64-unknown-linux-gnu/debug/PaletteCycle.build/Palette.swift.o","/home/runner/work/palette-cycle/palette-cycle/ios/.build/x86_64-unknown-linux-gnu/debug/PaletteCycle.build/PaletteCycleEngine.swift.o","/home/runner/work/palette-cycle/palette-cycle/ios/.build/x86_64-unknown-linux-gnu/debug/Modules/PaletteCycle.swiftmodule"]
+    description: "Compiling Swift Module 'PaletteCycle' (5 sources)"
+    args: ["/usr/share/swift/usr/bin/swiftc","-module-name","PaletteCycle","-emit-dependencies","-emit-module","-emit-module-path","/home/runner/work/palette-cycle/palette-cycle/ios/.build/x86_64-unknown-linux-gnu/debug/Modules/PaletteCycle.swiftmodule","-output-file-map","/home/runner/work/palette-cycle/palette-cycle/ios/.build/x86_64-unknown-linux-gnu/debug/PaletteCycle.build/output-file-map.json","-parse-as-library","-incremental","-c","@/home/runner/work/palette-cycle/palette-cycle/ios/.build/x86_64-unknown-linux-gnu/debug/PaletteCycle.build/sources","-I","/home/runner/work/palette-cycle/palette-cycle/ios/.build/x86_64-unknown-linux-gnu/debug/Modules","-target","x86_64-unknown-linux-gnu","-enable-batch-mode","-index-store-path","/home/runner/work/palette-cycle/palette-cycle/ios/.build/x86_64-unknown-linux-gnu/debug/index/store","-Onone","-enable-testing","-j4","-DSWIFT_PACKAGE","-DDEBUG","-module-cache-path","/home/runner/work/palette-cycle/palette-cycle/ios/.build/x86_64-unknown-linux-gnu/debug/ModuleCache","-parseable-output","-parse-as-library","-color-diagnostics","-swift-version","5","-g","-Xcc","-fPIC","-Xcc","-g","-package-name","ios","-Xcc","-fno-omit-frame-pointer"]
+
+  "PackageStructure":
+    tool: package-structure-tool
+    inputs: ["/home/runner/work/palette-cycle/palette-cycle/ios/PaletteCycle/","/home/runner/work/palette-cycle/palette-cycle/ios/Package.swift","/home/runner/work/palette-cycle/palette-cycle/ios/Package.resolved"]
+    outputs: ["<PackageStructure>"]
+    description: "Planning build"
+    allow-missing-inputs: true
+
