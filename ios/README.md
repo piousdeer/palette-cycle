@@ -46,7 +46,9 @@ PaletteCycle/
 
 ## 🏗️ Building the App
 
-### Option 1: Xcode (Recommended)
+### 🍎 Option 1: Xcode (Recommended)
+
+**Requirements:** macOS with Xcode 15.0+, Apple Developer Account
 
 1. **Open in Xcode:**
    ```bash
@@ -66,7 +68,39 @@ PaletteCycle/
    - Follow archive export wizard
    - Select "Distribute App" → "Custom" → "Enterprise/Ad Hoc"
 
-### Option 2: Command Line (xcodebuild)
+### 🐧 Option 2: Linux Cross-Compilation (xtool)
+
+**Requirements:** Linux system with xtool installed
+
+```bash
+# Install xtool cross-compilation toolchain
+curl -sSL https://xtool.sh/install.sh | sh
+
+# Build the iOS app on Linux
+./cross-build.sh
+```
+
+See `cross-compile.md` for detailed cross-compilation instructions.
+
+### ❄️ Option 3: Nix Flake with macOS VM
+
+**Requirements:** NixOS or Nix package manager
+
+```bash
+# Build with Nix flake (uses macOS VM)
+nix build
+
+# Or use the helper script
+./nix-build.sh
+
+# Alternative: Manual VM approach
+nix run github:MatthewCroughan/NixThePlanet#macos-vm
+# Then install Xcode in VM and build normally
+```
+
+### 🛠️ Option 4: Command Line (xcodebuild)
+
+**Requirements:** macOS with Xcode Command Line Tools
 
 ```bash
 # Build for device
@@ -89,6 +123,15 @@ xcodebuild -exportArchive \
            -exportPath ./export \
            -exportOptionsPlist ExportOptions.plist
 ```
+
+## 📋 Build Options Summary
+
+| Method | Platform | Complexity | Reliability | Requirements |
+|--------|----------|------------|-------------|--------------|
+| **Xcode** | macOS | Low | High | macOS + Xcode |
+| **xtool** | Linux | Medium | Medium | xtool + iOS SDK |
+| **Nix VM** | NixOS/Linux | High | Medium | Nix + VM support |
+| **xcodebuild** | macOS | Low | High | Xcode CLI Tools |
 
 ## 🎯 Key Differences from Android Version
 
